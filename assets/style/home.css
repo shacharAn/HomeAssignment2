@@ -1,48 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
-}
-header{
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-nav ul li{
-    margin: 0 15px;
-}
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav ul li a.active {
-    text-decoration: underline;
-}
-
 .hero{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 50px 20px;
     background-color: #f4f4f4;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.hero-image{
+    flex: 1;
 }
 .hero-image img{
-    width: 200px;
-    height: 200px;
-    border-radius: 60%;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
     object-fit: cover;
+}
+.hero-text{
+    flex: 2;
+    padding-left: 20px;
 }
 .hero-text h1{
     font-size: 2.5rem;
@@ -53,8 +30,6 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 .resume-button{
-    display: inline-block;
-    margin-top: 20px;
     padding: 10px 20px;
     background-color: #5da9c7;
     color: #fff;
@@ -62,13 +37,22 @@ nav ul li a.active {
     border-radius: 5px;
 }
 .call-to-action{
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
     padding: 40px 20px;
     background-color: #fff;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .call-to-action .column{
-    width: 48%;
+    flex: 1;
+    padding: 20px;
+}
+.call-to-action .column img{
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
 }
 .call-to-action .column a{
     display: block;
@@ -76,9 +60,23 @@ nav ul li a.active {
     color: #5da9c7;
     text-decoration: none;
 }
-footer{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+@media (max-width: 767px) {
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image{
+        margin-bottom: 20px;
+    }
+    .hero-text{
+        padding-left: 0;
+    }
+    .call-to-action {
+        flex-direction: column;
+    }
+
+.call-to-action.column{
+    width: 100%;
+    margin-bottom: 20px;
+    }
 }
