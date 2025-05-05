@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #fff;
     color: #333;
@@ -13,7 +13,7 @@ body{
     margin: 0 auto;
 }
 header{
-    background-color: #b886cc;
+    background-color: palevioletred;
     color: #fff;
     padding: 20px 0;
     margin:0 auto;
@@ -36,7 +36,7 @@ nav ul li a.active {
     text-decoration: underline;
 }
 footer{
-    background-color: #b886cc;
+    background-color: palevioletred;
     color: #fff;
     text-align: center;
     padding: 20px 0;
