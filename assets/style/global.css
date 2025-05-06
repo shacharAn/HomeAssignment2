@@ -2,20 +2,21 @@
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.6;
     background-color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
     color: #333;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 header{
-    background-color: palevioletred;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #FFB8E0;
+    padding: 30px 0;
     margin:0 auto;
     max-width: 1200px;
 }
@@ -36,8 +37,30 @@ nav ul li a.active {
     text-decoration: underline;
 }
 footer{
-    background-color: palevioletred;
+    background-color: #FFB8E0;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    width: 100%;
 }
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }
+}
+.

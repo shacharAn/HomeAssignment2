@@ -1,6 +1,7 @@
 .hero{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     padding: 50px 20px;
     background-color: #f4f4f4;
@@ -18,7 +19,7 @@
     object-fit: cover;
 }
 .hero-text{
-    flex: 2;
+    flex: 1;
     padding-left: 20px;
 }
 .hero-text h1{
@@ -31,10 +32,14 @@
 }
 .resume-button{
     padding: 10px 20px;
-    background-color: #5da9c7;
+    background-color: #bd88d5;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+}
+.resume-button:hover{
+    background-color: #8a55a4;
+
 }
 .call-to-action{
     font-size: 1.2rem;
@@ -42,6 +47,9 @@
     justify-content: space-between;
     padding: 40px 20px;
     background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -52,7 +60,7 @@
 .call-to-action .column a{
     display: block;
     margin: 10px 0;
-    color: #5da9c7;
+    color: #85529ae9;
     text-decoration: none;
 }
 .my-projects{
@@ -64,7 +72,7 @@
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
-    color: #333;
+    color: #EC7FA9;
 }
 .project {
     margin-bottom: 30px;
@@ -94,7 +102,7 @@
 
 .project .button {
     padding: 10px 20px;
-    background-color: #5da9c7;
+    background-color: #bd88d5;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -102,8 +110,7 @@
 }
 
 .project .button:hover {
-    background-color: #5864eb;
-    
+    background-color: #8a55a4;
 }
 @media (max-width: 767px) {
     .hero{

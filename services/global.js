@@ -4,3 +4,8 @@ document.addEventListener('DOMContentLoaded',function(){
         document.body.classList.toggle('dark-mode');
     });
 });
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+}
