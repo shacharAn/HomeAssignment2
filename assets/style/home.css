@@ -63,6 +63,9 @@
     color: #85529ae9;
     text-decoration: none;
 }
+body .call-to-action a:hover {
+    color: #f4c2f4; /* צבע טקסט שונה בעת ריחוף */
+}
 .my-projects{
     padding: 0px 20px;
     background-color: #f8f8f8;
@@ -99,7 +102,6 @@
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
-
 .project .button {
     padding: 10px 20px;
     background-color: #bd88d5;
@@ -143,3 +145,39 @@
         font-size: 1rem;
     }
 }
+body.dark-mode .hero {
+    background-color: #4e4d4d; 
+}
+body.dark-mode .resume-button {
+    background-color: #704264; 
+    color: #fff;
+}
+body.dark-mode .call-to-action {
+    background-color: #444; 
+    border-color: #666;
+}
+body.dark-mode .my-projects h2{
+    color: #9c638d;
+}
+body.dark-mode .my-projects {
+    background-color: #444;
+}
+body.dark-mode .project {
+    background-color: #4e4d4d;
+    color: #fff;
+}
+body.dark-mode .project .button {
+    background-color: #704264;
+}
+body.dark-mode.project .button:hover {
+    color:pink;
+}
+
+body.dark-mode .call-to-action a {
+    color: #a7b5c7; 
+}
+body.dark-mode .call-to-action a:hover {
+    color: #f4c2f4; /
+}
+
+

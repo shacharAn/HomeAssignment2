@@ -1,3 +1,16 @@
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #333;
+    --link-color-light: #616b71;
+    --header-background-light:#FFB8E0;
+    --footer-background-light: #FFB8E0;
+
+    --background-color-dark: #3C3D37;
+    --text-color-dark: #ffffff;
+    --link-color-dark: #fff;
+    --header-background-dark: #BE5985; 
+    --footer-background-dark: #BE5985; 
+}
 *{
     margin: 0 ;
     padding: 0;
@@ -5,17 +18,17 @@
 } 
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #fff;
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
     margin: 0;
     padding: 0;
     line-height: 1.6; 
-    color: #333;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; */
+    margin: 0 auto; 
 }
 header{
-    background-color: #FFB8E0;
+    background-color: var(--header-background-light);
     padding: 30px 0;
     margin:0 auto;
     max-width: 1200px;
@@ -29,19 +42,50 @@ nav ul li{
     margin: 0 15px;
 }
 nav ul li a{
-    color: #fff;
+    color: var(--background-color-light);
     text-decoration: none;
     font-weight: bold;
 }
 nav ul li a.active {
     text-decoration: underline;
+    color: #BE5985;
 }
 footer{
-    background-color: #FFB8E0;
-    color: #fff;
+    background-color: var(--footer-background-light);
+    color: var(--background-color-light);
     text-align: center;
     padding: 20px;
     width: 100%;
+}
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+a {
+    color: var(--link-color-light);
+}
+body.dark-mode a {
+    color: var(--link-color-dark);
+}
+#dark-mode-toggle {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+#dark-mode-toggle:hover {
+    opacity: 0.7;
+}
+body.dark-mode nav ul li a.active {
+    text-decoration: underline;
+    color: #545f66; 
+}
+body.dark-mode footer {
+    background-color: #720455; 
+}
+body.dark-mode header {
+    background-color: #720455; 
 }
 @media (max-width: 767px) {
     .container {
@@ -63,4 +107,3 @@ footer{
         flex-direction: row;
     }
 }
-.
