@@ -14,4 +14,9 @@ darkModeToggle.addEventListener('click', function() {
 if (localStorage.getItem('dark-mode') === 'enabled') {
     document.body.classList.add('dark-mode');
     darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // אייקון שמש
-}
+};
+// Toggle the mobile menu on clicking the hamburger icon
+document.getElementById('icon').addEventListener('click', function() {
+    const menuList = document.getElementById('menu-list');
+    menuList.classList.toggle('show');  // Toggle the menu visibility
+});

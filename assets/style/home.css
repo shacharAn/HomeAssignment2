@@ -1,75 +1,83 @@
 .hero{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
     padding: 50px 20px;
-    background-color: #f4f4f4;
     margin: 0 auto;
     max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .hero-image{
     flex: 1;
+    margin-right: 20px;
 }
 .hero-image img{
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
     border-radius: 50%;
-    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .hero-text{
-    flex: 1;
-    padding-left: 20px;
+    flex: 2;
+    text-align: left;
+    color: ֳֳ#333;
+    /* margin-right: 100px;*/
+    padding-left: 20px; 
 }
 .hero-text h1{
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-.hero-text p{
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
+.hero-text p{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
 .resume-button{
-    padding: 10px 20px;
+    padding: 15px 25px;
     background-color: #bd88d5;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 1rem;
+    border-radius: 30px;
 }
 .resume-button:hover{
     background-color: #8a55a4;
-
 }
 .call-to-action{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     display: flex;
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: 40px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin: 0 auto;
+    margin: 40px auto;
     max-width: 1200px;
 }
 .call-to-action .column{
     flex: 1;
     padding: 20px;
+    color: #85529a;
 }
 .call-to-action .column a{
+    font-size: 1.2rem;
     display: block;
     margin: 10px 0;
-    color: #85529ae9;
+    color: #bd88d5;
     text-decoration: none;
 }
-body .call-to-action a:hover {
-    color: #f4c2f4; /* צבע טקסט שונה בעת ריחוף */
+.call-to-action a:hover {
+    color: #8a55a4; /* צבע טקסט שונה בעת ריחוף */
 }
 .my-projects{
-    padding: 0px 20px;
+    padding: 40px;
     background-color: #f8f8f8;
     margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .my-projects h2{
     font-size: 2.5rem;
@@ -81,7 +89,7 @@ body .call-to-action a:hover {
     margin-bottom: 30px;
     padding: 20px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center; 
@@ -110,9 +118,50 @@ body .call-to-action a:hover {
     border-radius: 5px;
     text-align: center;
 }
-
 .project .button:hover {
     background-color: #8a55a4;
+}
+body.dark-mode{
+    background-color: #333333;
+    color: #fff;
+}
+body.dark-mode .hero-text h1 .hero-text p{
+    color: white;
+}
+body.dark-mode .resume-button {
+    background-color: #8a55a4; 
+}
+body.dark-mode .resume-button:hover {
+    background-color: #704264;
+}
+body.dark-mode .call-to-action {
+    background-color: #444; 
+}
+body.dark-mode .call-to-action h2 {
+    color: white;
+}
+body.dark-mode .my-projects {
+    background-color: #222;
+    color: white;
+}
+body.dark-mode .my-projects h2 {
+    color: white;
+}
+body.dark-mode .project{
+    background-color: #333;
+    color: white;
+}
+body.dark-mode .project .button{
+    background-color: #8A55A4;
+}
+body.dark-mode .project .button:hover {
+    background-color: #704264;
+}
+body.dark-mode .call-to-action a {
+    color: f4c2f4;
+}
+body.dark-mode .call-to-action a:hover {
+    color: white;
 }
 @media (max-width: 767px) {
     .hero{
@@ -128,8 +177,7 @@ body .call-to-action a:hover {
     .call-to-action {
         flex-direction: column;
     }
-
-.call-to-action.column{
+    .call-to-action.column{
     width: 100%;
     margin-bottom: 20px;
     }
@@ -145,39 +193,3 @@ body .call-to-action a:hover {
         font-size: 1rem;
     }
 }
-body.dark-mode .hero {
-    background-color: #4e4d4d; 
-}
-body.dark-mode .resume-button {
-    background-color: #704264; 
-    color: #fff;
-}
-body.dark-mode .call-to-action {
-    background-color: #444; 
-    border-color: #666;
-}
-body.dark-mode .my-projects h2{
-    color: #9c638d;
-}
-body.dark-mode .my-projects {
-    background-color: #444;
-}
-body.dark-mode .project {
-    background-color: #4e4d4d;
-    color: #fff;
-}
-body.dark-mode .project .button {
-    background-color: #704264;
-}
-body.dark-mode.project .button:hover {
-    color:pink;
-}
-
-body.dark-mode .call-to-action a {
-    color: #a7b5c7; 
-}
-body.dark-mode .call-to-action a:hover {
-    color: #f4c2f4; /
-}
-
-
