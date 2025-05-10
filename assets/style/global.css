@@ -44,7 +44,6 @@ nav.menu {
     justify-content:center;
     align-items: center;
     width: 100%;
-    flex-grow: ;
 }
 nav.menu .logo {
     font-size: 1.5rem;
