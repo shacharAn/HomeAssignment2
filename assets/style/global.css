@@ -37,13 +37,14 @@ header{
     align-items: center;
     width: 100%;
     position: relative;
+    height: 110px;
 }
 nav.menu {
     display: flex;
     justify-content:center;
     align-items: center;
     width: 100%;
-    flex-grow: 1;
+    flex-grow: ;
 }
 nav.menu .logo {
     font-size: 1.5rem;
@@ -78,6 +79,7 @@ nav ul li a.active {
     background-color: #FFB8E0;
     padding: 10px;
     border-radius: 5px;
+    
 }
 footer{
     background-color: var(--footer-background-light);
@@ -105,6 +107,11 @@ body.dark-mode {
     border: none;
     cursor: pointer;
     padding: 10px;
+    color: #fff;
+    display: inline-block;
+}
+.dark-mode #dark-mode-toggle i{
+    color: #fff;
 }
 .dark-mode nav ul li a.active {
     text-decoration: underline;

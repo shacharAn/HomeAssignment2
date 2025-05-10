@@ -70,3 +70,30 @@ h3 {
     color: #BE5986;
     font-weight: bold;
 }
+.dark-mode .calculator{
+    background-color: #333333;
+    color: #fff;
+}
+.dark-mode .calculator h2{
+    color: #f4cbe4;
+}
+.dark-mode .calculator p{
+    color: white;
+}
+.dark-mode #price-calculator{
+    border: 1px solid#444;
+}
+.dark-mode select input[type="number"] input[type="checkbox"]{
+    background-color: #555;
+    color: white;
+    border-color: #777;
+}
+.dark-mode button{
+    background-color: #8a55a4;
+}
+.dark-mode button:hover {
+    background-color: #704264;
+}
+.dark-mode label{
+    color: #f4cbe4;
+}

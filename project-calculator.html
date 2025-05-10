@@ -7,17 +7,25 @@
   <link rel="stylesheet" href="assets/style/calcualtor.css" />
   <link rel="stylesheet" href="assets/style/global.css" />
   <script src="services/calculator.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="project-calculator.html" class="active">Project calculator</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a href="javascript:void(0);" class="icon" id="hamburger-icon"><i class="fa-solid fa-bars"></i></a>
+      <nav class="menu">
+        <a href="index.html" class="logo">Shachar Portfolio</a>
+        <ul id="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project-calculator.html" class="active">Project calculator</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
   </header>
   <main>
     <section class="calculator">
@@ -47,5 +55,6 @@
   <footer>
     <p>@ 2025 Shachar Anafi. All rights reserved</p>
   </footer>
+  <script src="services/global.js"></script>
 </body>
 </html>
