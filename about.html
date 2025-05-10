@@ -10,8 +10,10 @@
 <body>
   <header>
     <div class="container">
-      <nav>
-        <ul>
+       <a href="javascript:void(0);" class="icon" id="hamburger-icon"> &#9776;</a>
+      <nav class="menu">
+        <h3 class="logo">Shachar protfolio</h3>
+        <ul id="menu-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="skills.html">Skills</a></li>
@@ -19,6 +21,9 @@
         </ul>
       </nav>
     </div>
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
   </header>
   <main>
     <section class="about">
@@ -49,5 +54,6 @@
   <footer class="container">
     <p>@ 2025 Shachar Anafi. All rights reserved</p>
   </footer>
+  <script src="services/global.js"></script>
 </body>
 </html>
