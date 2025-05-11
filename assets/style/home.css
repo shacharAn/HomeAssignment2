@@ -1,3 +1,4 @@
+@import url('variables.css');
 .hero{
     display: flex;
     justify-content: center;
@@ -23,7 +24,6 @@
     flex: 2;
     text-align: left;
     color: ֳֳ#333;
-    /* margin-right: 100px;*/
     padding-left: 20px; 
 }
 .hero-text h1{
@@ -35,6 +35,7 @@
     margin-bottom: 30px;
 }
 .resume-button{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 15px 25px;
     background-color: #bd88d5;
     color: #fff;
@@ -46,12 +47,11 @@
     background-color: #8a55a4;
 }
 .call-to-action{
-    /* font-size: 1.2rem; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px;
     background-color: #fff;
-    /* border: 1px solid #ddd; */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 40px auto;
@@ -70,7 +70,7 @@
     text-decoration: none;
 }
 .call-to-action a:hover {
-    color: #8a55a4; /* צבע טקסט שונה בעת ריחוף */
+    color: #8a55a4; 
 }
 .my-projects{
     padding: 40px;
@@ -89,7 +89,6 @@
     margin-bottom: 30px;
     padding: 20px;
     background-color: #fff;
-    /* border: 1px solid #ddd; */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center; 
@@ -121,46 +120,45 @@
 .project .button:hover {
     background-color: #8a55a4;
 }
-body.dark-mode{
-    background-color: #333333;
+.dark-mode .hero{
+    background-color: #4e4d4d;
     color: #fff;
 }
-body.dark-mode .hero-text h1 .hero-text p{
+.dark-mode .hero-text h1,
+.dark-mode .hero-text p{
     color: white;
 }
-body.dark-mode .resume-button {
+.dark-mode .resume-button {
     background-color: #8a55a4; 
 }
-body.dark-mode .resume-button:hover {
+.dark-mode .resume-button:hover {
     background-color: #704264;
 }
-body.dark-mode .call-to-action {
-    background-color: #444; 
+.dark-mode .call-to-action {
+    background-color: #4e4d4d; 
 }
-body.dark-mode .call-to-action h2 {
+.dark-mode .call-to-action h2,
+.dark-mode .my-projects h2  {
     color: white;
 }
-body.dark-mode .my-projects {
-    background-color: #222;
+.dark-mode .my-projects {
+    background-color: #4e4d4d;
     color: white;
 }
-body.dark-mode .my-projects h2 {
+.dark-mode .project{
+    background-color: #424141;
     color: white;
 }
-body.dark-mode .project{
-    background-color: #333;
-    color: white;
-}
-body.dark-mode .project .button{
+.dark-mode .project .button{
     background-color: #8A55A4;
 }
-body.dark-mode .project .button:hover {
+.dark-mode .project .button:hover {
     background-color: #704264;
 }
-body.dark-mode .call-to-action a {
-    color: f4c2f4;
+.dark-mode .call-to-action a {
+    color: #f4c2f4;
 }
-body.dark-mode .call-to-action a:hover {
+.dark-mode .call-to-action a:hover {
     color: white;
 }
 @media (max-width: 767px) {
@@ -184,11 +182,9 @@ body.dark-mode .call-to-action a:hover {
     .project {
         padding: 15px;
     }
-
     .project h3 {
         font-size: 1.5rem;
     }
-
     .project-description {
         font-size: 1rem;
     }

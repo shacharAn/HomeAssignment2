@@ -28,10 +28,8 @@
     background-color: #333333;
     color: #fff;
 }
+.dark-mode .section h2,
 .dark-mode .about h1{
-    color: #f4cbe4;
-}
-.dark-mode .section h2{
     color: #f4cbe4;
 }
 body.dark-mode .section p,

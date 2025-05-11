@@ -1,6 +1,31 @@
 /* variables.css */
-@import url('variables.css');
-
 :root {
-  --primary-color: #ffffff;
+--color-primary: #EC7FA9;
+--color-button: #bd88d5;
+--color-button-hover: #8a55a4;
+--color-dark: #333333;
+--color-light: #f4f4f4;
+--color-white: #fff;
+--color-dark-text: #333;
+--color-link: #bd88d5;
+--color-link-hover: #8a55a4;
+--color-background: #f9f9f9;
+--color-shadow: rgba(0, 0, 0, 0.1);
+--color-dark-shadow: rgba(0, 0, 0, 0.2);
+--color-accent: #f4cbe4;
+--color-light-accent: #f4c2f4;
+
+--font-primary: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+--font-size-large: 2.5rem;
+--font-size-medium: 2rem;
+--font-size-small: 1.2rem;
+--font-size-xsmall: 1rem;
+
+--space-large: 40px;
+--space-medium: 20px;
+--space-small: 10px;
+--border-radius: 12px;
+
+--box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+--box-shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -1,8 +1,8 @@
 document.getElementById('calculate-price').addEventListener('click', function() {
-    var siteType = document.getElementById('site-type').value;
-    var numPages = document.getElementById('num-pages').value;
-    var customDesign = document.getElementById('custom-design').checked;
-    var price = 0;
+    let siteType = document.getElementById('site-type').value;
+    let numPages = document.getElementById('num-pages').value;
+    let customDesign = document.querySelector('input[name="custom-design"]:checked').value;
+    let price = 0;
 
     if (siteType === 'business-site') {
         price = 1000;
@@ -12,8 +12,12 @@ document.getElementById('calculate-price').addEventListener('click', function() 
         price = 1500;
     }
     price += (numPages - 1) * 200;
-    if (customDesign) {
+    if (customDesign === "yes") {
         price += 1000;
     }
-    document.getElementById('price-result').textContent = '₪' + price;
+    document.getElementById('price-result').innerText = price + '₪';
+});
+document.getElementById('reset-calculator').addEventListener('click', function() {
+    document.getElementById('price-calculator').reset()
+    document.getElementById('price-result').innerText=' 0 ₪' 
 });
