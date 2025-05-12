@@ -1,40 +1,40 @@
+@import url('variables.css');
 .calculator {
-    font-family: 'Lucida Sans', sans-serif;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    font-family: var(--font-primary);
+    padding: var(--space-large) var(--space-medium);
+    background-color: var(--color-light);
     max-width: 800px;
     margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
     text-align: center;
 }
 .calculator h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #EC7FA9;
+    font-size: var(--font-size-large);
+    margin-bottom: var(--space-medium);
+    color: var(--color-primary);
 }
 .calculator p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #666;
+    font-size: var(--font-size-small);
+    margin-bottom: var(--space-medium);
+    color: var(--color-dark);
 }
 #price-calculator {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    font-size: 1.2rem;
+    gap: var(--space-medium);
+    font-size:var(--font-size-small);
     align-items: center;
 }
 label {
     font-weight: bold;
-    color: #333;
-    margin-bottom: 8px;
+    color:var(--color-dark);
+    margin-bottom: var(--space-small);
 }
 select, input[type="number"], input[type="checkbox"] {
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 8px;
+    padding: var(--border-radius);
+    font-size: var(--font-size-xsmall);
+    border-radius: var(--space-small);
     border: 1px solid #ccc;
     width: 100%;
     max-width: 350px;
@@ -42,53 +42,48 @@ select, input[type="number"], input[type="checkbox"] {
     transition: all 0.3s ease;
 }
 select:focus, input[type="number"]:focus, input[type="checkbox"]:focus {
-    border-color: #EC7FA9; 
+    border-color: var(--color-primary); 
 }
 button {
-    padding: 10px 20px;
-    background-color: #bd88d5;
-    color: white;
-    font-size: 1.2rem;
+    padding: var(--space-small) var(--space-medium);
+    background-color: var(--color-button);
+    color: var(--color-white);
+    font-size: var(--font-size-small);
     border: none;
-    border-radius: 8px;
+    border-radius: var(--space-small);
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: var(--space-medium);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 button:hover {
-    background-color: #8a55a4;
+    background-color: var(--color-button-hover);
 }
 h3 {
-    font-size: 2rem;
+    font-size: var(--font-size-medium);
     margin-top: 40px;
 }
 #price-result {
-    color: #BE5986;
+    color: var(--color-primary);
     font-weight: bold;
 }
 .dark-mode .calculator{
-    background-color: #333333;
-    color: #fff;
+    background-color: var(--color-dark);
+    color: var(--color-white);
 }
 .dark-mode .calculator h2{
-    color: #f4cbe4;
+    color: var(--color-primary);
 }
 .dark-mode .calculator p,
 .dark-mode label{
-    color: white;
+    color: var(--color-white);
 }
 .dark-mode #price-calculator{
     border: 1px solid#444;
 }
-.dark-mode select input[type="number"] input[type="checkbox"]{
-    background-color: #555;
-    color: white;
-    border-color: #777;
-}
 .dark-mode button{
-    background-color: #8a55a4;
+    background-color: var(--color-button-hover);
 }
 .dark-mode button:hover {
-    background-color: #704264;
+    background-color: var(--color-button-dark-mode);
 }
 

@@ -7,13 +7,16 @@
 --color-light: #f4f4f4;
 --color-white: #fff;
 --color-dark-text: #333;
---color-link: #bd88d5;
---color-link-hover: #8a55a4;
 --color-background: #f9f9f9;
 --color-shadow: rgba(0, 0, 0, 0.1);
 --color-dark-shadow: rgba(0, 0, 0, 0.2);
 --color-accent: #f4cbe4;
 --color-light-accent: #f4c2f4;
+--color-darkMode : #4e4d4d;
+--color-button-dark-mode: #704264;
+--header-background-light:#FFB8E0;
+--header-background-dark:#A2678A;
+
 
 --font-primary: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 --font-size-large: 2.5rem;

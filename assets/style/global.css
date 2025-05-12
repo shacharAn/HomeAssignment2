@@ -11,15 +11,16 @@
     --header-background-dark: #BE5985; 
     --footer-background-dark: #BE5985; 
 }
+@import url('variables.css');
 *{
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
+    font-family:var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-dark-text);
     margin: 0;
     padding: 0;
     line-height: 1.6; 
@@ -29,7 +30,7 @@ body{
 }
 header{
     background-color: var(--header-background-light);
-    padding: 20px 0;
+    padding: var(--space-medium) 0;
     margin:0 auto;
     max-width: 1200px;
     display: flex;
@@ -47,11 +48,11 @@ nav.menu {
     width: 100%;
 }
 nav.menu .logo {
-    font-size: 1.5rem;
+    font-size: var(--font-size-small);
     font-weight: bold;
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
-    margin-right: 20px; 
+    margin-right: var(--space-medium); 
 }
 nav ul {
     display: flex;
@@ -63,7 +64,7 @@ nav ul li{
     margin: 0 15px;
 }
 nav ul li a{
-    color: var(--background-color-light);
+    color: var(--color-background);
     text-decoration: none;
     font-weight: bold;
 }
@@ -73,34 +74,28 @@ nav ul li a.active {
 }
 .icon{
     display: none;
-    font-size: 30px;
+    font-size: var(--space-medium);
     cursor: pointer;
-    color: #fff;
-    background-color: #FFB8E0;
-    padding: 10px;
+    color: var(--color-white);
+    background-color: var(--header-background-light);
+    padding: var(--space-small);
     border-radius: 5px;
     
 }
 footer{
-    background-color: var(--footer-background-light);
-    color: var(--background-color-light);
+    background-color: var(--header-background-light);
+    color: var(--color-background);
     text-align: center;
-    padding: 40px;
+    padding: var(--space-large);
     width: 100%;
     height: 100px;
 }
 body.dark-mode {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
+    background-color: var(--color-dark);
+    color: var(--color-white);
 }
 .dark-mode a {
-    color: var(--link-color-dark);
-}
-.dark-mode .icon{
-    background-color: #A2678A;
-}
-.dark-mode #menu-list{
-    background-color: #A2678A;
+    color: var(--color-white);
 }
 #dark-mode-toggle {
     margin-top: -10px;
@@ -108,23 +103,21 @@ body.dark-mode {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 10px;
-    color: #fff;
+    padding: var(--space-small);
+    color: var(--color-white);
     display: inline-block;
 }
 .dark-mode #dark-mode-toggle i{
-    color: #fff;
+    color:  var(--color-white);
 }
 .dark-mode nav ul li a.active {
     text-decoration: underline;
-    color: #f4cbe4; 
+    color:  var(--color-accent); 
 }
-.dark-mode footer {
-    background-color: #A2678A; 
+.dark-mode footer,.dark-mode header {
+    background-color:var(--header-background-dark); 
 }
-.dark-mode header {
-    background-color: #A2678A; 
-}
+
 @media (max-width: 767px) {
     .icon{
         display: block; 
@@ -134,14 +127,14 @@ body.dark-mode {
     width: 100%;
     text-align: center;
     background-color: #FFB8E0;
-    padding: 20px;
+    padding: var(--space-medium);
     position: absolute;
     top: 60px;
     right: 0;
-    border-radius: 10px;
+    border-radius: var(--space-small);
 }
 #menu-list li{
-    margin: 10px 0;
+    margin: var(--space-small) 0;
 }
 nav ul {
     display: block;

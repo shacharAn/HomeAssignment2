@@ -1,51 +1,54 @@
-skills{
-    padding: 40px 20px;
-    background-color: #f4f4f4;
-    color: #333;
+@import url('variables.css');
+.skills{
+    font-family: var(--font-primary);
+    padding: var(--space-large) var(--space-medium);
+    background-color: var(--color-light);
+    color: var(--color-dark);
 }
-.skills h2 {
-    font-size: 2.5rem;
+.skills h1{
+    color: var(--color-primary);
     text-align: center;
-    margin-bottom: 30px;
-    color: #EC7FA9;
+    font-size: var(--font-size-large);
+    margin-bottom: var(--space-small); 
 }
 .skills-category {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-white);
+    padding: var(--space-medium);
+    margin-bottom: var(--space-medium);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-
-.skills-category h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
+.skills-category h2 {
+    font-size: var(--font-size-medium);
+    color: var(--color-dark);
+    margin-top: 0;
+    margin-bottom: var(--space-small);
 }
-
 .skills-category ul {
     list-style-type: none;
     padding: 0;
 }
-
 .skills-category ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #666;
+    font-size: var(--font-size-xsmall);
+    margin-bottom: var(--space-small);
+    line-height: 1.8;
 }
 .dark-mode .skills{
-    background-color: #333333;
-    color: white;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+.dark-mode .skills h1{
+    color: var(--color-primary);
 }
 .dark-mode .skills h2{
-    color: #f4cbe4;
+    color: var(--color-accent);
 }
 .dark-mode .skills-category{
-    background-color: #444;
-}
-.dark-mode .skills-category h3{
-    color: #f4cbe4;
+    background-color: var(--color-darkMode);
 }
 .dark-mode .skills-category ul li {
-    color: white;
+    color: var(--color-white);
 }
