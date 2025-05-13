@@ -182,6 +182,9 @@
     .project {
         padding: var(--space-medium);
     }
+    .project .button{
+        font-size: var(--font-size-small);
+    }
     .project h3 {
         font-size: var(--space-small);
     }

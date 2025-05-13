@@ -126,7 +126,7 @@ body.dark-mode {
     display: none;
     width: 100%;
     text-align: center;
-    background-color: #FFB8E0;
+    background-color: var(--header-background-light);
     padding: var(--space-medium);
     position: absolute;
     top: 60px;
@@ -135,6 +135,10 @@ body.dark-mode {
 }
 #menu-list li{
     margin: var(--space-small) 0;
+}
+.dark-mode #menu-list,
+.dark-mode .icon{
+    background-color: var(--header-background-dark);
 }
 nav ul {
     display: block;
