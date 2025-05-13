@@ -34,6 +34,7 @@
       <form id="price-calculator">
         <label for="site-type">Site Type:</label>
           <select id="site-type" name="site-type" required>
+            <option value="">Select a site type</option>
             <option value="business-site">Business Site</option>
             <option value="online-store">Online Store</option>
             <option value="blog">Blog</option>
@@ -41,13 +42,14 @@
         <label for="num-pages">Number of Pages (1-10):</label>
         <input type="number" id="num-pages" name="num-pages" min="1" max="10" value="1" required>
 
-        <label for="custom-design">Custom Design:</label>
+        <label for="custom-design"></label>
         <div>
+          <label for="custom-design-yes">Custom Design Yes</label>
           <input type="radio" id="custom-design-yes" name="custom-design" value="yes">
-          <label for="custom-design-yes">Yes</label>
           
+          <label for="custom-design-no">Custom Design No</label> 
           <input type="radio" id="custom-design-no" name="custom-design" value="no" checked>
-          <label for="custom-design-no">No</label>
+
         </div>
         <button type="button" id="calculate-price">Calculate Price</button>
         <button type="button" id="reset-calculator">Reset</button>
